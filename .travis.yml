@@ -1,4 +1,6 @@
 language: ruby
+before_script:
+  - psql -c 'create database blog_test;' -U assignitapp
 after_install: rake db:migrate
 rvm:
   - 1.9.3
