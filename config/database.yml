@@ -49,8 +49,7 @@ test:
   encoding: unicode
   database: fourpointohblog-test
   pool: 5
-  username: assignitapp
-  password: assignitapp
+  username: postgres
   host: localhost
 
 production:
