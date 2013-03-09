@@ -47,7 +47,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: fourpointohblog-test
+  database: fourpointohblog_test
   pool: 5
   username: postgres
   host: localhost
