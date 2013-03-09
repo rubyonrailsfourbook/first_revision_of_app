@@ -1,4 +1,5 @@
 Fourpointohblog::Application.routes.draw do
+  get "sessions/new"
   get "home/index"
 
   resource :users
