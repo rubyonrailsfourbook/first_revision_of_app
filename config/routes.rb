@@ -4,6 +4,8 @@ Fourpointohblog::Application.routes.draw do
 
   resource :users
 
+  resource :sessions
+
   root to: 'home#index'
 
 

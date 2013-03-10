@@ -31,7 +31,8 @@ group :development, :test do
   gem 'rspec-rails', '2.13.0'
   gem 'guard-rspec', '2.4.1'
   gem 'guard-spork', '1.4.2'
-  gem 'spork', '0.9.2'
+  gem 'spork', '~> 1.0rc'
+  gem 'rb-inotify', '~> 0.8.8'
 end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

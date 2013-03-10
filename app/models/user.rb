@@ -1,7 +1,14 @@
 class User < ActiveRecord::Base
-	validates_presence_of :name, :email
+	validates_presence_of :name, :email, :password
 
-	validates_as_email_address :email
+	validates_length_of :password, within: 6..512
+
+	validates_as_email_address :email, strict: false
 
 	has_secure_password
+
+	validates_uniqueness_of :email, case_sensitive: false
+
+	before_save { email.downcase! }
+
 end
