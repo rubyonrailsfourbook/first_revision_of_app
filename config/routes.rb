@@ -1,12 +1,16 @@
 Fourpointohblog::Application.routes.draw do
 
-  resources :users
+  resources :users do
+    get 'authors'
+  end
 
   resources :sessions
 
   resources :posts
 
   root to: 'home#index'
+
+  get '/authors' => 'users#authors'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

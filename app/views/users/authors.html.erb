@@ -1,0 +1,6 @@
+<h1>Authors</h1>
+<% for user in @users %>
+	<div class="user author well">
+		<h3><%= link_to user.name, user %></h3>
+	</div>
+<% end %>

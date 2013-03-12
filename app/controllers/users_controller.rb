@@ -3,8 +3,13 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def authors
+    @users = User.where("admin is true")
+  end
+
   def show
      @user = User.find(params[:id])
+     @posts = @user.posts.all
   end
 
   def new
@@ -36,7 +41,7 @@ class UsersController < ApplicationController
 
   def destory
     @user.destory
-    redirect_to root_url, flash: { success: "User was destoryed." }
+    redirect_to root_url, flash: { success: "User was destored." }
   end
 
   private
