@@ -1,10 +1,10 @@
 Fourpointohblog::Application.routes.draw do
-  get "sessions/new"
-  get "home/index"
 
-  resource :users
+  resources :users
 
-  resource :sessions
+  resources :sessions
+
+  resources :posts
 
   root to: 'home#index'
 

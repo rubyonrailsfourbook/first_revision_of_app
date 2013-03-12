@@ -1,0 +1,3 @@
+<h1><%= @post.name %></h1>
+<h4>Published at <%= @post.published_on.stamp(date_format) %> | Written By: <%= link_to @post.user.name, @post.user %></h4>
+<%= raw markdown.render(@post.content) %>

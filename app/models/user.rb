@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
 
 	before_save { email.downcase! }
 
+	has_many :posts
+
 end

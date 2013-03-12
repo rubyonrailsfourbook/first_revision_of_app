@@ -10,5 +10,10 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap-wysihtml5
  */
 @import 'bootstrap';
+
+.wysihtml5-sandbox {
+	width:900px !important;
+}
