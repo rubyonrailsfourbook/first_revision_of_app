@@ -26,6 +26,9 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'thin', '1.5.0'
 gem 'validates_as_email_address', '0.2.4'
+gem 'bootstrap-wysihtml5-rails', '0.3.1.19'
+gem 'stamp', '0.5.0'
+gem 'redcarpet', '2.2.2'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.0'
