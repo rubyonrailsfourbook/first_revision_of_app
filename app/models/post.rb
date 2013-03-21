@@ -25,4 +25,8 @@ class Post < ActiveRecord::Base
 	    Tag.where(name: n.strip).first_or_create!
 	  end
 	end
+
+	def tag_tokens=(tokens)
+		self.tag_ids = Tag.ids_from_tokens(tokens)
+	end
 end
