@@ -10,7 +10,11 @@ Fourpointohblog::Application.routes.draw do
 
   resources :tags
 
+  resources :comments
+
   root to: 'home#index'
+  get '/sign_in' => 'sessions#new'
+  get '/sign_out' => 'sessions#destory'
 
   get '/authors' => 'users#authors'
 

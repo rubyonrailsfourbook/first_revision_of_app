@@ -1,0 +1,12 @@
+<% form_for @comment do |f| %>
+	<% if @current_user %>
+		<p>Leaving comment as <%= @current_user.name %>. <%= link_to "Not #{@current_user.name}", sign_out_url %></p>
+		<%= f.label "Comment" %>
+		<%= f.text_area :content, :rows => 12, :cols => 35 %>
+	<% else %>
+		<p>
+			In order to leave a commeent you must <%= link_to "sign up", new_user_url %> or if you have an
+			account please <%= link_to "sign in", new_session_url %>
+		</p>
+	<% end %>
+<% end %>
