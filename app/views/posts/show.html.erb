@@ -2,3 +2,5 @@
 <h4>Published at <%= @post.published_on.stamp(date_format) %> | Written By: <%= link_to @post.user.name, @post.user %></h4>
 <%= raw markdown.render(@post.content) %>
 Tags: <%= raw @post.tags.all.map { |t| link_to t.name, tag_path(t) }.join(', ') %>
+<br />
+<%= render 'comments/form' %>

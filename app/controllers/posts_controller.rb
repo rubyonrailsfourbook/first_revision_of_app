@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def show
-
+    @comment = Comment.new
   end
 
   def new
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.update(post_params)
+    @post = Post.update(params[:id], post_params)
     if @post.update
       redirect_to root_url, flash: { success: "Post was updated." }
     else
