@@ -14,6 +14,9 @@
 	<%= f.label :published_on %>
 	<%= f.datetime_select :published_on %>
 
+	<%= f.label :tag_list, "Tags (separated by commas)" %><br />
+  	<%= f.text_field :tag_list %>
+
 	<%= f.label :content %>
 	<%= f.text_area :content, rows: 10, cols: 900,  class: 'wysihtml5' %>
 

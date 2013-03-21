@@ -36,6 +36,8 @@ group :development, :test do
   gem 'guard-spork', '1.4.2'
   gem 'spork', '~> 1.0rc'
   gem 'rb-inotify', '~> 0.8.8'
+  gem 'better_errors', '0.7.2'
+  gem 'binding_of_caller', '0.7.1'
 end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

@@ -1,10 +1,12 @@
 class PostsController < ApplicationController
+  before_filter :set_post, only: [:show, :edit, :update, :destroy]
+
   def index
-    @posts = find_posts
+    @posts = find_post
   end
 
   def show
-    @post = Post.find(params[:id])
+
   end
 
   def new
@@ -22,11 +24,11 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.find params[:id]
   end
 
   def update
-    @post = Post.update(post_params, nil)
+    @post = Post.update(post_params)
     if @post.update
       redirect_to root_url, flash: { success: "Post was updated." }
     else
@@ -37,6 +39,10 @@ class PostsController < ApplicationController
   private
 
   	def post_params
-  		params.require(:post).permit(:name, :content, :published_on)
+  		params.require(:post).permit(:name, :content, :published_on, :tag_list)
   	end
+
+    def set_post
+      @post = Post.find(params[:id])
+    end
 end

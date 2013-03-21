@@ -8,6 +8,8 @@ Fourpointohblog::Application.routes.draw do
 
   resources :posts
 
+  resources :tags
+
   root to: 'home#index'
 
   get '/authors' => 'users#authors'

@@ -11,7 +11,6 @@ describe User do
 	it { should respond_to(:password) }
 	it { should respond_to(:admin) }
 
-
 	it { should_not be_admin }
 
 	describe "when name is not present" do

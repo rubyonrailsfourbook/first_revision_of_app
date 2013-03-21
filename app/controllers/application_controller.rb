@@ -10,10 +10,6 @@ class ApplicationController < ActionController::Base
       else
         Post.all
       end
-        respond_to do |format|
-          format.html # index.rhtml
-          format.xml { render :xml => @posts.to_xml }
-      end
     else
       Post.all
     end
