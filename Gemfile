@@ -29,6 +29,7 @@ gem 'validates_as_email_address', '0.2.4'
 gem 'bootstrap-wysihtml5-rails', '0.3.1.19'
 gem 'stamp', '0.5.0'
 gem 'redcarpet', '2.2.2'
+gem 'ancestry', '1.3.0'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.0'
