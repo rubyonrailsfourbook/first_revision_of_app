@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/bcardarella/client_side_validations.git
+  revision: 6855ba7031d41d562a43e02ce34d8c560a1e87a8
+  branch: 4-0-beta
+  specs:
+    client_side_validations (3.2.2)
+
+GIT
   remote: git://github.com/rails/activerecord-deprecated_finders.git
   revision: c00788c2b7e01170f63bd9651f7efd8deb4bd4b0
   specs:
@@ -100,6 +107,9 @@ GEM
     builder (3.1.4)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
+    client_side_validations-turbolinks (1.0.0)
+      client_side_validations (~> 3.2.0)
+      turbolinks (~> 1.0.0)
     coderay (1.0.9)
     coffee-script (2.2.0)
       coffee-script-source
@@ -223,6 +233,8 @@ DEPENDENCIES
   bootstrap-sass (= 2.3.0.1)
   bootstrap-will_paginate (= 0.0.9)
   bootstrap-wysihtml5-rails (= 0.3.1.19)
+  client_side_validations!
+  client_side_validations-turbolinks (= 1.0.0)
   coffee-rails!
   guard-rspec (= 2.4.1)
   guard-spork (= 1.4.2)

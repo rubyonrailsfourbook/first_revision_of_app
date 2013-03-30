@@ -16,5 +16,6 @@
 //= require_tree .
 //= require bootstrap
 //= require bootstrap-wysihtml5
+//= require rails.validations.turbolinks
 $(".alert").alert();
 

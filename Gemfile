@@ -30,6 +30,9 @@ gem 'bootstrap-wysihtml5-rails', '0.3.1.19'
 gem 'stamp', '0.5.0'
 gem 'redcarpet', '2.2.2'
 gem 'ancestry', '1.3.0'
+gem 'turbolinks', '1.0.0'
+gem 'client_side_validations', github: 'bcardarella/client_side_validations', branch: '4-0-beta'
+gem 'client_side_validations-turbolinks', '1.0.0'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.0'
@@ -40,10 +43,6 @@ group :development, :test do
   gem 'better_errors', '0.7.2'
   gem 'binding_of_caller', '0.7.1'
 end
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks', '1.0.0'
-
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
