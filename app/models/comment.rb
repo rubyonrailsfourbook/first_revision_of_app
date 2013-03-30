@@ -1,5 +1,9 @@
 class Comment < ActiveRecord::Base
   belongs_to :post
 
+  belongs_to :user
+
   validates_presence_of :content
+
+  validates_length_of :attribute, minimum: 20
 end
