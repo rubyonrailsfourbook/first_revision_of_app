@@ -40,6 +40,10 @@ group :development, :test do
   gem 'binding_of_caller', '0.7.1'
 end
 
+group :test do
+  gem 'ci_reporter', '1.8.4'
+end
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '1.0.0'
 
