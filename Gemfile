@@ -19,14 +19,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '2.2.1'
+gem 'jquery-rails', github: 'rails/jquery-rails'
 gem 'jquery-ui-rails', '4.0.1'
 gem 'bootstrap-sass', '2.3.0.1'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'thin', '1.5.0'
 gem 'validates_as_email_address', '0.2.4'
-gem 'bootstrap-wysihtml5-rails', '0.3.1.19'
+gem 'bootstrap-wysihtml5-rails', github: 'Nerian/bootstrap-wysihtml5-rails'
 gem 'stamp', '0.5.0'
 gem 'redcarpet', '2.2.2'
 gem 'ancestry', '1.3.0'
@@ -42,6 +42,7 @@ group :development, :test do
   gem 'rb-inotify', '~> 0.8.8'
   gem 'better_errors', '0.7.2'
   gem 'binding_of_caller', '0.7.1'
+  gem 'rails-footnotes', github: 'josevalim/rails-footnotes'
 end
 
 # To use ActiveModel has_secure_password

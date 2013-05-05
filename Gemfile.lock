@@ -1,9 +1,23 @@
 GIT
+  remote: git://github.com/Nerian/bootstrap-wysihtml5-rails.git
+  revision: 7ffec8598743c93b4d554f59c5ec95c9e9915ca5
+  specs:
+    bootstrap-wysihtml5-rails (0.3.1.19)
+      railties (>= 3.0)
+
+GIT
   remote: git://github.com/bcardarella/client_side_validations.git
-  revision: 6855ba7031d41d562a43e02ce34d8c560a1e87a8
+  revision: 3b007401618cf77d2856f692e708e0eda6ea808d
   branch: 4-0-beta
   specs:
     client_side_validations (3.2.2)
+
+GIT
+  remote: git://github.com/josevalim/rails-footnotes.git
+  revision: 81849ddddef0bcbec0e85e6a27a5c5a5b2384d76
+  specs:
+    rails-footnotes (3.7.9)
+      rails (>= 3.0.0)
 
 GIT
   remote: git://github.com/rails/activerecord-deprecated_finders.git
@@ -26,8 +40,16 @@ GIT
       railties (>= 4.0.0.beta, < 5.0)
 
 GIT
+  remote: git://github.com/rails/jquery-rails.git
+  revision: e51fc324e635efb4d2418acb5aabe3101c8bfb59
+  specs:
+    jquery-rails (2.2.1)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+
+GIT
   remote: git://github.com/rails/rails.git
-  revision: 8744632fb5649cf26cdcd1518a3554ece95a401b
+  revision: 3b0b573ac3ecbec5b1fa021abbe86b267bbefb8c
   specs:
     actionmailer (4.0.0.beta1)
       actionpack (= 4.0.0.beta1)
@@ -51,7 +73,7 @@ GIT
       minitest (~> 4.2)
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
-      tzinfo (~> 0.3.33)
+      tzinfo (~> 0.3.37)
     rails (4.0.0.beta1)
       actionmailer (= 4.0.0.beta1)
       actionpack (= 4.0.0.beta1)
@@ -64,8 +86,7 @@ GIT
       actionpack (= 4.0.0.beta1)
       activesupport (= 4.0.0.beta1)
       rake (>= 0.8.7)
-      rdoc (~> 3.4)
-      thor (>= 0.17.0, < 2.0)
+      thor (>= 0.18.1, < 2.0)
 
 GIT
   remote: git://github.com/rails/sass-rails.git
@@ -79,7 +100,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/sprockets-rails.git
-  revision: afce1e65f7c6df4ae96522b26e755915d238ff80
+  revision: 59922ecd19a81bf504be8e10ed624ae011a8360d
   specs:
     sprockets-rails (2.0.0.rc3)
       actionpack (>= 3.0)
@@ -91,7 +112,7 @@ GEM
   specs:
     ancestry (1.3.0)
       activerecord (>= 2.3.14)
-    atomic (1.0.1)
+    atomic (1.0.2)
     bcrypt-ruby (3.0.1)
     better_errors (0.7.2)
       coderay (>= 1.0.0)
@@ -102,8 +123,6 @@ GEM
       sass (~> 3.2)
     bootstrap-will_paginate (0.0.9)
       will_paginate
-    bootstrap-wysihtml5-rails (0.3.1.19)
-      railties (>= 3.0)
     builder (3.1.4)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
@@ -114,20 +133,21 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.1)
+    coffee-script-source (1.6.2)
     daemons (1.1.9)
     debug_inspector (0.0.2)
-    diff-lcs (1.2.1)
+    diff-lcs (1.2.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    ffi (1.4.0)
-    guard (1.6.2)
+    ffi (1.6.0)
+    formatador (0.2.4)
+    guard (1.7.0)
+      formatador (>= 0.2.4)
       listen (>= 0.6.0)
       lumberjack (>= 1.0.2)
       pry (>= 0.9.10)
-      terminal-table (>= 1.4.3)
       thor (>= 0.14.6)
     guard-rspec (2.4.1)
       guard (>= 1.1)
@@ -138,24 +158,20 @@ GEM
       spork (>= 0.8.4)
     hike (1.2.1)
     i18n (0.6.4)
-    jquery-rails (2.2.1)
-      railties (>= 3.0, < 5.0)
-      thor (>= 0.14, < 2.0)
     jquery-ui-rails (4.0.1)
       jquery-rails
       railties (>= 3.1.0)
-    json (1.7.7)
-    libv8 (3.11.8.13)
+    libv8 (3.11.8.17)
     listen (0.7.3)
-    lumberjack (1.0.2)
+    lumberjack (1.0.3)
     mail (2.5.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     method_source (0.8.1)
-    mime-types (1.21)
-    minitest (4.6.2)
-    multi_json (1.7.0)
+    mime-types (1.22)
+    minitest (4.7.0)
+    multi_json (1.7.2)
     pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.12)
@@ -165,13 +181,11 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rake (10.0.3)
+    rake (10.0.4)
     rb-inotify (0.8.8)
       ffi (>= 0.5.0)
-    rdoc (3.12.2)
-      json (~> 1.4)
     redcarpet (2.2.2)
-    ref (1.0.2)
+    ref (1.0.4)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -196,7 +210,6 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     stamp (0.5.0)
-    terminal-table (1.4.5)
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
@@ -204,10 +217,10 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    thor (0.17.0)
+    thor (0.18.1)
     thread_safe (0.1.0)
       atomic
-    tilt (1.3.5)
+    tilt (1.3.6)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -232,16 +245,17 @@ DEPENDENCIES
   binding_of_caller (= 0.7.1)
   bootstrap-sass (= 2.3.0.1)
   bootstrap-will_paginate (= 0.0.9)
-  bootstrap-wysihtml5-rails (= 0.3.1.19)
+  bootstrap-wysihtml5-rails!
   client_side_validations!
   client_side_validations-turbolinks (= 1.0.0)
   coffee-rails!
   guard-rspec (= 2.4.1)
   guard-spork (= 1.4.2)
-  jquery-rails (= 2.2.1)
+  jquery-rails!
   jquery-ui-rails (= 4.0.1)
   pg (= 0.14.1)
   rails!
+  rails-footnotes!
   rb-inotify (~> 0.8.8)
   redcarpet (= 2.2.2)
   rspec-rails (= 2.13.0)
