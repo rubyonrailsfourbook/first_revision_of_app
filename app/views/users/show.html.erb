@@ -2,7 +2,7 @@
 
 <% for post in @posts do %>
   <div class="blog post well">
-    <h2><%= post.name %></h2>
+    <h2><%= link_to post.name, post %></h2>
     <h5>Posted by <%= link_to post.user.name, post.user %></h5>
     <h5><%= post.published_on.stamp(date_format) %></h5>
     <%= raw markdown.render(post.content) %>

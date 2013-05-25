@@ -6,9 +6,12 @@
 	</p>
 <% else %>
 	<p>Leaving comment as <%= @current_user.name %>. <%= link_to "Not #{@current_user.name}", sign_out_url %>?</p>
-		<%= form_for @comment, :validate => true do |f| %>
+		<%= form_for @comment, name: 'new_comment' do |f| %>
 			<%= f.label "Comment" %>
-			<%= f.text_area :content, rows: 12, cols: 80, class: 'comment_text_area' %><p></p>
+			<%= f.hidden_field :post_id, value: @post.id %>
+			<%= f.text_area :content, rows: '12', cols: 65, class: 'comment_text_area wysiwyg5', onkeyup: 'vaildatelength(this.value.length)' %><p></p>
 			<%= f.submit class: 'btn btn-primary' %>
 	<% end %>
 <% end %>
+
+<div id="characters_limit"></div>

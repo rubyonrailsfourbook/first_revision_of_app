@@ -4,3 +4,23 @@
 Tags: <%= raw @post.tags.all.map { |t| link_to t.name, tag_path(t) }.join(', ') %>
 <br />
 <%= render 'comments/form' %>
+<hr>
+<div id="comments">
+	<% for comment in @comments %>
+		<div class="well">
+			<div class="comment row-fluid">
+				<div class="span2">
+						<div class="comment_byline"><b><%= comment.user.name %></b></div>
+						<div class="created_at"><i><%= comment.created_at.strftime("%B %d, %Y") %></i></div>
+				</div>
+				<div class="span10 content">
+					<p><%= comment.content %></p>
+				</div>
+			</div>
+			<hr>
+				<div class="actions">
+					<%= link_to "Reply", new_comment_url(parent_id: @comment), remote: true, class: 'btn' %>
+				</div>
+		</div>
+	</div>
+<% end %>

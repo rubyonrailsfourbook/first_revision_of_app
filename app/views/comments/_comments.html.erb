@@ -1,9 +1,10 @@
-<div class="comment">
-	<div class="created_at"><%= post.created_at.strftime("%B %d, %Y") %></div>
+<div class="comment well">
+	<div class="left_by"><%= comment.user.name %> said:
+	<div class="created_at"><%= comment.created_at.strftime("%B %d, %Y") %></div>
 	<div class="content">
 		<%= comment.content %>
 	</div>
 	<div class="actions">
-		<%= link_to "Reply", new_post_url(parent_id: post)
+		<%= link_to "Reply", new_comment_url(parent_id: post), remote: true %>
 	</div>
 </div>

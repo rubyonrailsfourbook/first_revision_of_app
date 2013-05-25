@@ -6,7 +6,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    @comment = @current_user.comments.new
+    @comment = Comment.new(post: @post, user: @current_user) unless @current_user.nil?
+    @comments = @post.comments.to_a
   end
 
   def new

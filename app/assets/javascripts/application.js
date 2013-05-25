@@ -17,5 +17,6 @@
 //= require bootstrap
 //= require bootstrap-wysihtml5
 //= require rails.validations.turbolinks
+//= require comments
 $(".alert").alert();
 
